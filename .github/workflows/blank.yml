@@ -37,13 +37,13 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
       - run: |
-          docker build -t ghcr.io/sofia269/flowerrr-node:1.0 node/
+          docker build -t ghcr.io/sofia269/flowerrr-node-app:1.0 node/
           
-          docker push ghcr.io/sofia269/flowerrr-node:1.0
+          docker push ghcr.io/sofia269/flowerrr-node-app:1.0
           
-          docker build -t ghcr.io/sofia269/flowerrr-python:1.0 python/
+          docker build -t ghcr.io/sofia269/flowerrr-python-app:1.0 python/
           
-          docker push ghcr.io/sofia269/flowerrr-python:1.0 
+          docker push ghcr.io/sofia269/flowerrr-python-app:1.0 
 
       - name: Run a multi-line script
         run: |
