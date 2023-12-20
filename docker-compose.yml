@@ -2,11 +2,11 @@ version: "3.9"
 
 services:
   node: 
-    image: ghcr.io/sofia269/flowerrr-node:1.0
+    image: ghcr.io/sofia269/flowerrr-node-app:1.0
     restart: unless-stopped
     container_name: node-app
     
   python: 
-    image: ghcr.io/sofia269/flowerrr-python:1.0
+    image: ghcr.io/sofia269/flowerrr-python-app:1.0
     restart: unless-stopped
     container_name: python-app
