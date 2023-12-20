@@ -64,5 +64,5 @@ jobs:
              registry: ghcr.io
              username: ${{ github.actor }}
              password: ${{ secrets.GITHUB_TOKEN }}        
-        - run: ssh -o "StrictHostKeyChecking no" 'sofia269-flowerrr-byi6oer32lp@sofia269-flowerrr-byi6oer32lp.ssh.ws-eu107.gitpod.io' "cd /workspace/nke-template && docker compose pull && docker-compose up -d"
-        - run: scp -o "StrictHostKeyChecking no" docker-compose.yml 'sofia269-flowerrr-byi6oer32lp@sofia269-flowerrr-byi6oer32lp.ssh.ws-eu107.gitpod.io':/workspace/nke-template
+        - run: ssh -o "StrictHostKeyChecking no” 'sofia269-flowerrr-byi6oer32lp@sofia269-flowerrr-byi6oer32lp.ssh.ws-eu107.gitpod.io' “cd /workspace/nke-template && docker compose pull && docker-compose up -d”
+        - run: scp -o "StrictHostKeyChecking no” docker-compose.yml 'sofia269-flowerrr-byi6oer32lp@sofia269-flowerrr-byi6oer32lp.ssh.ws-eu107.gitpod.io':/workspace/nke-template
